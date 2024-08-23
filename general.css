@@ -1,0 +1,174 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    cursor: url("curseur.svg"),auto;
+    text-wrap: pretty;
+    text-align: justify;
+    
+}
+
+
+.ALL{
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    font-family: inter;
+    overflow: hidden;
+}
+
+*{
+    cursor: url("curseur.svg"), auto;
+}
+
+.mode{
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+}
+
+.mode img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.space{
+    height: 50px;
+}
+
+
+.menu{
+    margin: 7px 7%;
+    border-radius: 10px;
+   
+    background: linear-gradient(160deg, rgba(60, 60, 60, 0.4), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    position: fixed;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+
+.none{
+    color: transparent;
+    position: fixed;
+    height: 1px;
+}
+
+.noned{
+    
+}
+
+.logo{
+    height: 40px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    
+}
+
+.logo tr,.logo table{
+    width: 100%;
+    height: 100%;
+}
+
+.logo td{
+    width: 50%;
+}
+
+.logo tr img{
+    width:100%;
+    object-fit:cover;
+    display: inline;
+    border-radius: 50%;
+}
+
+.menu ul{
+    list-style: none;
+    display: inline;
+}
+
+.menu li{
+    display: inline;
+    animation: text .5s 1;
+}
+
+@keyframes text{
+    0%{
+        font-size: 0;
+    }
+
+    50%{
+        font-size: 9px;
+    }
+
+    90%{
+        font-size: 15px;
+    }
+}
+
+.menu li a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    
+}
+
+.actu{
+    border: 1px black solid;
+    border-radius:10px ;
+    padding: 5px;
+}
+
+.options span{
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+    border-radius:10px ;
+    padding: 5px;
+}
+
+.option2 span{
+    color: rgb(249, 249, 249);
+    transition: .8s;
+}
+
+
+
+.menu li span:hover{
+    color: black;
+    border: none;
+    background-color: white;
+    box-shadow:0 0 19px rgb(255, 255, 255) ;
+    font-size: large;
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
