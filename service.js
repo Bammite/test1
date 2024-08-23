@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
     const container = document.getElementById("pointMcolor");
-    const numberOfDivs = 1000;
+    const numberOfDivs = 1500;
     const colors = ['vert', 'rouge', 'jaune', 'bleu', 'noir', 'blanc', 'violet'];
 
     for (let i = 1; i <= numberOfDivs; i++) {
@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
         div.style.setProperty('--animation-duration', `${Math.random() * 400}s`); // Durée aléatoire entre 10s et 15s
         div.style.setProperty('--animation-delay', `${Math.random() * 5}s`); // Délai d'animation aléatoire
         container.appendChild(div);
+        await new Promise(resolve => setTimeout(resolve, 50));
     }
 });
+
+
 
 
 const selected = document.querySelector(".selected");
