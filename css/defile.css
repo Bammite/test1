@@ -1,0 +1,47 @@
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    
+}
+
+/***************************************partie propre au site********************************************/
+
+
+swiper-slide{
+    display: flex;
+    flex-direction: column;
+}
+
+swiper-slide a{
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 12px;
+    margin: 10px;
+    transition: all .5s;
+}
+
+swiper-slide a:hover{
+    padding: 10px;
+}
+
+.realisation{
+    padding: 5px;
+}

@@ -1,0 +1,94 @@
+
+
+.ALL{
+    
+    position: fixed;
+    height: 100%;
+}
+
+.chatbot-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(60deg,rgb(236, 244, 247) 0%,rgb(202, 232, 243) 100%);
+    
+    position: relative;
+}
+
+.conversation {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+.message.user {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.message.bot {
+    
+    color: #333;
+    margin-right: auto;
+}
+
+.message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #007bff;
+}
+
+.input-area input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.input-area input[type="button"] {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.questionCourants {
+    
+    padding: 10px;
+    
+    border-radius: 20px;
+}
+
+.questionCourants div {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+

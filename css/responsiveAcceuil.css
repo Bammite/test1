@@ -1,0 +1,231 @@
+/************************************************************Introduction********************************/
+
+
+
+
+@media screen and (max-width:700px){
+    .introContenaire{
+        height: 97vh;
+    }
+    .introContenaire .cloud img{
+        width: 40%;
+        transform: translateX(0px);
+        animation: cloudX 1s linear;
+    }
+
+    .allrow img{
+        width: 90%; 
+    }
+    .allrow {
+        
+        width: 90%;
+        padding: 0px;
+    }
+    .presentation{
+        position: absolute;
+        align-items: center;
+        height: 70vh;
+    }
+    .presentation td{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+ }
+
+
+
+ @media screen and (max-width:570px){
+
+    
+
+ }
+
+ @media screen and (max-width:550px){
+    
+    .defileVerticale{
+        width: 20%;
+        height: 450px;
+        
+    }
+    .defileVerticale {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: scroll 20s linear infinite;
+
+    }
+
+
+    .defA{
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .checkbox-group label{
+        font-size: 12px;
+    }
+    .pays[type="checkbox"] {
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: .2px solid #000;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+    .dynamic-text{
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+
+    .defl img{
+        width: 1001px;
+        
+    }
+
+    .ns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ns a{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        display: block;
+    }
+    .ns button{
+        width: 100%;
+        margin-top: 15%;
+        margin-left: 0;
+        
+    }
+
+
+
+
+    /******************************************productiviter**********************************/
+
+
+
+    .productivitéTable{
+        width: 100%;
+        
+        padding: 0;
+        margin: 0;
+        border: none;
+
+    }
+
+    .productivitéTable tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .defileVerticale,.defileVerticale_contenair{
+        width: 100%;
+        display: none;
+    }
+
+    .defileH_contenair{
+        overflow: hidden;
+    }
+
+    .defileH{
+        display: flex;
+        width: 100%;
+        
+        animation: scrollX 20s linear infinite;
+    }
+
+    
+    @keyframes scrollX {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+        
+    }
+
+
+    /**********************************Service***********************************************/
+    
+
+
+    .boutons .bd{
+        display: none;
+    }
+
+
+    /****************************************realisation******************************/
+    .mySwiper1 img{
+        width: 90%;
+    }
+
+    /*****************************************footter********************************/
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (min-width:570px){
+
+    .defileH_contenair{
+        display: none;
+    }
+
+    .defileVerticale{
+        width: 20%;
+        height: 450px;
+        
+    }
+    .defileVerticale {
+        flex-direction: column;
+        animation: scrollY 20s linear infinite;
+    }
+
+    .defileVerticale {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @keyframes scrollY {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+        
+    }
+}
+
+
+
+
+
+
+.defileVerticale img,.defileH img {
+    height: 50px;
+    padding: 10px;
+    width: 50px;
+    margin: 10px;
+    margin: 0 20px;
+    object-fit: contain;
+}

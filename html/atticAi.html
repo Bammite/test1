@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/menuslider.css">
+    <link rel="stylesheet" href="../css/atticai.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
+    <title>Attic Chatbot</title>
+    <style>
+       
+       
+    </style>
+</head>
+<body>
+    <div class="filtre"></div>
+    <div class="contain_menu">
+        <div class="optg">
+            <div class="opt1 optm">
+                <div class="icone"></div>
+                <div class="topt">
+                    <a href="contact.html">Contact us</a>
+                </div>
+            </div>
+            <div class="opt2 optm">
+                <div class="icone"></div>
+                <div class="topt">
+                    <a href="team.html">Team</a>
+                </div>
+            </div>
+            <div class="opt3 optm">
+                <div class="icone"></div>
+                <div class="topt">
+                    <a href="service.html">Service</a>
+                </div>
+            </div>
+            <div class="opt4 optm">
+                <div class="icone"></div>
+                <div class="topt">
+                    <a href="home.html">Home</a>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="btn" >
+            <div class="btn_logop">
+                <div class="btn_logo">
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="ALL">
+        <div class="intro">
+        
+            <div class="menu">
+                <div class="logo">
+                    <table>
+                        <tr>
+                            <td class="image">
+                                <img src="../img/atticSymbole.png" alt="">
+                            </td>
+                            <td class="titre">
+                                Attic
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <ul class="options">
+                    <li ><a href="home.html" ><span class="opt ">Home</span></a></li>
+                    <li><a href="atticAi.html"><span class="opt actu">attic AI</span></a></li>
+                    <li><a href="service.html"><span class="opt">Service</span></a></li>
+                    <li><a href="team.html"><span class="opt">Team</span></a></li>
+                    <li><a href="contact.html"><span class="opt ">Contact us</span></a></li>
+                    <li></li>
+                </ul>
+                
+                <div class="mode noned">
+                    <img src="../img/modeE.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="chatbot-container">
+            <div class="conversation" id="conversation">
+                <div class="space"></div>
+                <div class="message bot">
+                    <img src="../img/chatbot.svg" alt="Chatbot Icon">
+                    <span>Bonjour, comment puis-je vous aider ?</span>
+                </div>
+            </div>
+            <div class="questionCourants">
+                <swiper-container class="mySwiper mySwiper3" pagination="true" pagination-clickable="true" space-between="30"
+                    slides-per-view="3">
+                        <swiper-slide> <div onclick="sendMessage('Où est situé Attic ?')">Où est situé Attic ?</div> </swiper-slide>
+                        <swiper-slide onclick="sendMessage('Quel est le prix d\'un site Ecommerce chez Attic ?')">           <div >Quel est le prix d'un site Ecommerce chez Attic ?</div> </swiper-slide>
+                        <swiper-slide> <div onclick="sendMessage('Quelles sont les réalisations d\'Attic ?')">Quelles sont les réalisations d'Attic ?</div> </swiper-slide>
+                        <swiper-slide><div onclick="sendMessage('Qui sont les membres de l\'entreprise ?')">Qui sont les membres de l'entreprise ?</div> </swiper-slide>
+    
+                </swiper-container>
+                
+                <swiper-container class="mySwiper mySwiper2" pagination="true" pagination-clickable="true" space-between="30"
+                    slides-per-view="2">
+                        <swiper-slide> <div onclick="sendMessage('Où est situé Attic ?')">Où est situé Attic ?</div> </swiper-slide>
+                        <swiper-slide onclick="sendMessage('Quel est le prix d\'un site Ecommerce chez Attic ?')">           <div >Quel est le prix d'un site Ecommerce chez Attic ?</div> </swiper-slide>
+                        <swiper-slide> <div onclick="sendMessage('Quelles sont les réalisations d\'Attic ?')">Quelles sont les réalisations d'Attic ?</div> </swiper-slide>
+                        <swiper-slide><div onclick="sendMessage('Qui sont les membres de l\'entreprise ?')">Qui sont les membres de l'entreprise ?</div> </swiper-slide>
+    
+                </swiper-container>
+                
+                <swiper-container class="mySwiper mySwiper1" pagination="true" pagination-clickable="true" space-between="30"
+                    slides-per-view="1">
+                        <swiper-slide> <div onclick="sendMessage('Où est situé Attic ?')">Où est situé Attic ?</div> </swiper-slide>
+                        <swiper-slide onclick="sendMessage('Quel est le prix d\'un site Ecommerce chez Attic ?')">           <div >Quel est le prix d'un site Ecommerce chez Attic ?</div> </swiper-slide>
+                        <swiper-slide> <div onclick="sendMessage('Quelles sont les réalisations d\'Attic ?')">Quelles sont les réalisations d'Attic ?</div> </swiper-slide>
+                        <swiper-slide><div onclick="sendMessage('Qui sont les membres de l\'entreprise ?')">Qui sont les membres de l'entreprise ?</div> </swiper-slide>
+    
+                </swiper-container>
+            </div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Tapez ici...">
+                <input type="button" value="Envoyer" onclick="handleUserInput()">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function getNumberBasedOnScreenSize() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 480) {
+        return 1; // Par exemple, retournez 1 si l'écran est inférieur à 480px
+    } else if (screenWidth >= 480 && screenWidth < 768) {
+        return 2; // Retournez 2 si l'écran est entre 480px et 768px
+    } else if (screenWidth >= 768 && screenWidth < 1024) {
+        return 3; // Retournez 3 si l'écran est entre 768px et 1024px
+    } else {
+        return 4; // Retournez 4 si l'écran est supérieur ou égal à 1024px
+    }
+}
+
+// Exemple d'utilisation :
+const number = getNumberBasedOnScreenSize();
+console.log("Le nombre retourné est :", number);
+        function sendMessage(message) {
+            console.log("Message envoyé: " + message);
+            // Vous pouvez ici ajouter le code pour afficher le message dans votre conversation
+        }
+        const conversation = document.getElementById('conversation');
+
+        const responses = {
+            "Où est situé Attic ?": "Attic est situé à Dakar, au Sénégal.",
+            "Quel est le prix d'un site Ecommerce chez Attic ?": "Le prix d'un site Ecommerce dépend des fonctionnalités. Veuillez nous contacter pour un devis.",
+            "Quelles sont les réalisations d'Attic ?": "Attic a réalisé plusieurs projets, notamment des sites web pour des entreprises locales.",
+            "Qui sont les membres de l'entreprise ?": "Les membres de l'entreprise sont des experts en développement web, en design, et en marketing digital."
+        };
+
+        function handleUserInput() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput.trim() !== "") {
+                sendMessage(userInput);
+                document.getElementById('userInput').value = '';
+            }
+        }
+
+        function sendMessage(message) {
+            // User Message
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('message', 'user');
+            userMessage.innerHTML = `<img src="../img/utilisateur.svg" alt="User Icon"><span>${message}</span>`;
+            conversation.appendChild(userMessage);
+
+            // Scroll to the bottom of the conversation
+            conversation.scrollTop = conversation.scrollHeight;
+
+            // Bot Response
+            setTimeout(() => {
+                const botMessage = document.createElement('div');
+                botMessage.classList.add('message', 'bot');
+                const botResponse = responses[message] || "Je suis désolé, je ne comprends pas la question.";
+                botMessage.innerHTML = `<img src="../img/chatbot.svg" alt="Chatbot Icon"><span>${botResponse}</span>`;
+                conversation.appendChild(botMessage);
+                conversation.scrollTop = conversation.scrollHeight;
+            }, 1000); // Simulate a delay in response
+        }
+    </script>
+        <script src="../JS/generale.js"></script>
+
+        <script src="../JS/swiper-bundle.min.js"></script>
+</body>
+</html>
