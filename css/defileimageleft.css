@@ -1,5 +1,5 @@
 .defl img{
-    animation: go 7s  ease-in-out ;
+    
     transform: translateX(900px);
     
     position: absolute;
@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: center;
     width: 40%;
+}
+
+.aniamImg{
+    animation: go 7s  ease-in-out ;
 }
 
 .defl{
@@ -40,8 +44,3 @@
     }
 }
 
-@media screen and (max-width:570px){
-
-  
-    
-}
