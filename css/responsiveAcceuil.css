@@ -1,11 +1,33 @@
 /************************************************************Introduction********************************/
+@media screen and (max-width:1010px){
+    .opt{
+        font-size: 12px;
+    }
 
+    .menu li a{
+        margin: 0px;
+        text-decoration: none;
+        
+        letter-spacing: 1px;
+        transition: 0.2s;
+    }
 
+    .text_intro_acceiulle{
+        text-align: start;
+        display: flex;
+        margin: 5px;
+    }
 
-
-@media screen and (max-width:700px){
+    .ns button{
+        margin-top: 15%;
+        border: none;
+        border-radius: 25px;
+        padding: 8px 12px;
+        margin-left: 7px;
+    }
+    
     .introContenaire{
-        height: 97vh;
+        height: 80vh;
     }
     .introContenaire .cloud img{
         width: 40%;
@@ -26,13 +48,40 @@
         align-items: center;
         height: 70vh;
     }
-    .presentation td{
+    .presentation .cercle{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
+
+    /****************************************Qualité************************************/
+
+
+    .Qualite{
+        color: #008CBA;
+        
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+    }
+
+    .Qualite tr{
+       width: 100%;
+       margin: 30px 0;
+       border-radius: 20px;
+       padding: 12px;
+    }
+
+    
+
+    /*************************************formulaire*******************************/
+
+    .sr .allrow {
+        width: 100%;
+    }
+    
     
  }
 
@@ -44,7 +93,7 @@
 
  }
 
- @media screen and (max-width:550px){
+ @media screen and (max-width:610px){
     
     .defileVerticale{
         width: 20%;
@@ -59,11 +108,35 @@
 
     }
 
+    .text_intro_acceiulle{
+        text-align: center;
+        
+        margin: 5px;
+    }
+
+    .introContenaire{
+        height: 100vh;
+    }
+
+    .ns button{
+        margin-top: 5px;
+        border: none;
+        border-radius: 25px;
+        padding: 8px 12px;
+        margin-left: 0;
+    }
+
+    .ns a{
+        border-radius: 25px;
+        margin-left: 0;
+    }
+
 
     .defA{
         font-size: 20px;
         width: 100%;
         margin-bottom: 20px;
+        text-align: center;
     }
     
     .checkbox-group label{
@@ -90,6 +163,7 @@
     }
 
     .ns {
+        margin-top: 7%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -106,7 +180,7 @@
     }
     .ns button{
         width: 100%;
-        margin-top: 15%;
+        margin-top: 2%;
         margin-left: 0;
         
     }
@@ -116,7 +190,22 @@
 
     /******************************************productiviter**********************************/
 
+    .productivité p{
+        margin: 0;
+        padding: 30px 10px;
+    }
 
+    .productivité .titre2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .productivité{
+        text-align: justify;
+        margin: 20px 10px;
+        padding: 30px 10px;
+    }
+    
 
     .productivitéTable{
         width: 100%;
@@ -134,12 +223,23 @@
     }
 
     .defileVerticale,.defileVerticale_contenair{
+       
         width: 100%;
         display: none;
     }
 
     .defileH_contenair{
+
         overflow: hidden;
+    }
+
+    .productivitéTable{
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .prdvt{
+        background-color: #D9D9D9;
     }
 
     .defileH{
@@ -148,7 +248,6 @@
         
         animation: scrollX 20s linear infinite;
     }
-
     
     @keyframes scrollX {
         0% {
@@ -174,6 +273,8 @@
     .mySwiper1 img{
         width: 90%;
     }
+
+    
 
     /*****************************************footter********************************/
     .footer-container{
@@ -222,9 +323,9 @@
 
 
 .defileVerticale img,.defileH img {
-    height: 50px;
+    height: 60px;
+    width: 60px;
     padding: 10px;
-    width: 50px;
     margin: 10px;
     margin: 0 20px;
     object-fit: contain;

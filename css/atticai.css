@@ -55,6 +55,27 @@
     display: flex;
     padding: 10px;
     background-color: #007bff;
+    
+}
+
+@media screen and (max-width:570px){
+
+    .input-area{
+        padding-bottom: 70px;
+    }
+
+    .contain_menu{
+        position: fixed;
+        width: 100px;
+        padding: 10px;
+        margin: 20px;
+        bottom: 8%;
+        right: 0;
+        text-align: center;
+        
+        z-index: 11;  
+    }
+
 }
 
 .input-area input[type="text"] {

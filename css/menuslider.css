@@ -49,8 +49,7 @@
 .contain_menu{
     position: fixed;
     width: 100px;
-    padding: 10px;
-    margin: 20px;
+    
     bottom: 5%;
     right: 0;
     text-align: center;
@@ -83,49 +82,47 @@
     
 }
 
-.opt1{
-    
-    
-    
-}
 
 
 
 
-.opt2{
-    /* background-image: url(../img/atticLogo.png); */
+/* .opt2{
+    background-image: url(../img/atticLogo.png);
     
 }
 
 .opt3{
-    /* background-image: url(../img/atticLogo.png); */
+    background-image: url(../img/atticLogo.png); 
     
 }
 .opt4{
 
-    /* background-image: url(../img/atticLogo.png); */
+    /* background-image: url(../img/atticLogo.png); 
     
-}
+} */
+
+
 .opta1{
-    transform: translateY(-65px);
+    
+    transform: translateY(-75px);
     /* position: relative; */
     transition: all 1s;
     opacity: 1;
 }
 .opta2{
-    transform: translateY(-110px);
+    transform: translateY(-120px);
     /* position: relative; */
     transition: all 1s;
     opacity: 1;
 }
 .opta3{
-    transform: translateY(-155px);
+    transform: translateY(-165px);
     /* position: relative; */
     transition: all 1s;
     opacity: 1;
 }
 .opta4{
-    transform: translateY(-200px);
+    transform: translateY(-210px);
     transition: all 1s;
     opacity: 1;
     /* position: relative; */
@@ -142,6 +139,11 @@
     display: inline;
     text-align: center;
     font-size: 18px;
+}
+
+
+.opt{
+    transform: translateX(30px);
 }
 
 .topt:hover{
