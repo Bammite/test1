@@ -44,14 +44,16 @@ body *{
 }
 
 .introContenaire .cloud{
-    height: 20%;
+    height: 10%;
     bottom: 0;
+    right: 0;
     position: absolute;
     width: 100%;
     display: flex;
     align-items: end;
     justify-content: end;
     transform: translateY(0px);
+    z-index: 2;
     animation: cloudY 1s linear;
 }
 
@@ -116,9 +118,13 @@ body *{
     color: rgb(0, 0, 0);
     font-weight: bold;
     transition: all 2s;
-    font-size: 2vw;
+    font-size: 1.6vw;
     transform: translateX(0px);
     animation: titre 1s linear;
+}
+
+.bienvenue{
+    height: 70px;
 }
 
 
@@ -176,9 +182,15 @@ body *{
     color: white;
 }
 
+.ns{
+    z-index: 10;
+}
+
 
 .ns button{
-    margin-top: 15%;
+    z-index: 10;
+    background-color: white;
+    margin-top: 5%;
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
@@ -187,6 +199,13 @@ body *{
 
 .nsc{
     color: #0199cc;
+    z-index: 10;
+}
+
+.nss{
+    color: #000;
+    z-index: 10;
+    background-color: white;
 }
 
 .nss:hover{
@@ -203,7 +222,6 @@ body *{
 
 
 .ns button:hover{
-    
     padding: 13px 18px;
 }
 

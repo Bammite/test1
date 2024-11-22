@@ -41,15 +41,20 @@ afficherBloc('bloc-web');
 
 
 const phrases = [
-    "Bienvenue sur notre espace virtuele",
-    "Explorez nos services.",
-    "Nous vous proposons des solutions mobile et web,",
-    "une mise en place de chatbot pour integrer a vos platforme",
-    "Une gestion de vos aprofondie de vos base de données",
-    "Ainsi que la creation de logiciele de bureau ",
-    "Contactez-nous pour plus d'informations.",
-    "Merci de votre visite !"
+    "Bienvenue sur notre espace virtuel, où l'innovation prend vie.",
+    "Explorez nos services adaptés à vos besoins spécifiques.",
+    "Nous vous proposons des solutions mobiles et web performantes.",
+    "Mettez en place un chatbot pour améliorer l'interaction avec vos clients sur toutes vos plateformes.",
+    "Profitez d'une gestion approfondie et sécurisée de vos bases de données.",
+    "Créez des logiciels de bureau sur mesure, adaptés à vos processus métiers.",
+    "Optimisez votre présence numérique avec des applications mobiles modernes.",
+    "Notre expertise en intelligence artificielle pour transformer votre entreprise.",
+    "Développez des solutions e-commerce innovantes pour booster vos ventes.",
+    "Bénéficiez de services personnalisés pour chaque étape de votre transformation digitale.",
+    "Contactez-nous dès aujourd'hui pour discuter de vos projets numériques.",
+    "Merci de votre visite et à très bientôt !"
 ];
+
 
 let index = 0;
 let charIndex = 0;
@@ -59,7 +64,7 @@ function typeText() {
     if (charIndex < phrases[index].length) {
         textElement.textContent += phrases[index].charAt(charIndex);
         charIndex++;
-        setTimeout(typeText, 100); // Temps entre chaque lettre (en ms)
+        setTimeout(typeText, 70); // Temps entre chaque lettre (en ms)
     } else {
         setTimeout(eraseText, 2000); // Temps avant de commencer à effacer (en ms)
     }

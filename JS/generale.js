@@ -26,20 +26,20 @@ window.addEventListener('scroll', function() {
 });
 
 
-const chgMode =() =>{
-    const mode=document.querySelector('.mode');
-    const nav=document.querySelector('.ALL_ligth');
-    const options=document.querySelector('.options');
-    const text1=document.querySelector('.text_intro_acceiulle');
-    const textElement = document.querySelector(".dynamic-text");
+// const chgMode =() =>{
+//     const mode=document.querySelector('.mode');
+//     const nav=document.querySelector('.ALL_ligth');
+//     const options=document.querySelector('.options');
+//     const text1=document.querySelector('.text_intro_acceiulle');
+//     const textElement = document.querySelector(".dynamic-text");
     
-    mode.addEventListener('click', ()=> {
-        nav.classList.toggle('ALL_dark');
-        options.classList.toggle('option2');
-        text1.classList.toggle('text_intro_acceiulle2');
-        textElement.classList.toggle('dynamic-text2');
-    });
-}
-chgMode();
+//     mode.addEventListener('click', ()=> {
+//         nav.classList.toggle('ALL_dark');
+//         options.classList.toggle('option2');
+//         text1.classList.toggle('text_intro_acceiulle2');
+//         textElement.classList.toggle('dynamic-text2');
+//     });
+// }
+// chgMode();
 
-AOS.init();
+// AOS.init();
